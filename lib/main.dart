@@ -6,6 +6,7 @@ import 'package:taca_la/app/modules/infos/info_papel.dart';
 import 'package:taca_la/app/modules/infos/info_vidro.dart';
 import 'package:taca_la/app/modules/infos/info_metal.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taca_la/app/modules/splash/splash_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,8 +36,9 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.w500, color: Colors.black87, fontSize: 18),
         ),
       ),
-      initialRoute: '/',
+      initialRoute: '/splash',
       routes: {
+        '/splash': (context) => const SplashScreen(),
         '/': (context) => const PaginaInicialView(),
         '/pontos': (context) => const PontosColetaView(),
         '/infoPlástico': (context) => const InfoPlastico(),
