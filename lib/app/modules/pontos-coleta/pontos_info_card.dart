@@ -66,7 +66,7 @@ class LocalInfoCard extends StatelessWidget {
                 child: ElevatedButton.icon(
                   onPressed: () => _launchURL(mapsUrl),
                   icon: const Icon(Icons.map_rounded),
-                  label: const Text('Abrir no Google Mapas'),
+                  label: const Text('Abrir no Google Maps'),
                   style: ElevatedButton.styleFrom(
                     elevation: 4,
                     backgroundColor: Colors.green[500],
