@@ -38,9 +38,14 @@ class LocalInfoCard extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Image.network(imageUrl),
+              Container(
+                width: double.maxFinite,
+                height: 200,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.network(imageUrl,
+                      width: 200, height: 200, fit: BoxFit.cover),
+                ),
               ),
               const SizedBox(
                 height: 12,
